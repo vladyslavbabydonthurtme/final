@@ -1,0 +1,286 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  background: #ddd;
+  border-right: 1px solid #777;
+  z-index: 10;
+}
+
+.sidebar-text {
+  padding: 10px;
+}
+
+.sidebar .sidebar-logo {
+  text-align: center;
+  border-bottom: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.sidebar.cropped {
+  bottom: auto;
+}
+
+.sidebar.cropped .sidebar-logo {
+  margin: 0;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background: #eee;
+}
+
+.header .link {
+  flex: 1;
+  border: 1px solid #777;
+  border-left: none;
+}
+
+.header .link:last-child {
+  border-right: none;
+}
+
+.header .link a {
+  display: block;
+  color: #333;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-image-container {
+  position: absolute;
+  top: 60px;
+  left: 240px;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+}
+
+.main-image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*STOOLS*/
+
+.sub-header {
+  position: absolute;
+  top: 60px;
+  left: 240px;
+  right: 0;
+  height: 75px;
+  display: flex;
+  z-index: 4;
+  justify-content: flex-end;
+  background: #eee;
+  border-bottom: 1px solid #777;
+}
+
+.sub-header-item {
+  width: 100px;
+  background: #eee;
+  border: 1px solid #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-bar {
+  position: absolute;
+  top: 135px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #eee;
+  border-bottom: 1px solid #777;
+}
+
+.search-button {
+  display: flex;
+  width: 200px;
+  margin-left: 25px;
+  padding: 10px;
+  align-items: center;
+}
+
+.search-title {
+  color: #999;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.stools-container {
+  position: absolute;
+  top: 186px;
+  left: 0;
+  right: 0;
+}
+
+.stools-list {
+  display: flex;
+}
+
+.stool-container {
+  flex: 1;
+  max-height: 300px;
+  cursor: pointer;
+  border: 1px solid #555;
+  border-top: 0;
+}
+
+.stool-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.stool-img img {
+  height: 200px;
+}
+
+.stool-container .title {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  text-transform: uppercase;
+  padding: 8px;
+  background: #eee;
+}
+.stool-container a {
+  text-decoration: none;
+}
+
+.product-container {
+  position: absolute;
+  top: 185px;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 185px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+}
+
+.product-image {
+  width: 500px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-container .product {
+  position: relative;
+}
+
+.icon-3d {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.icons-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icons-bar .icon {
+  padding-right: 10px;
+}
+
+.product {
+  padding: 40px;
+  background: #fff;
+}
+
+/*DETAILS*/
+.details {
+  top: calc(100vh);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.details .product-description {
+  background: #eee;
+  display: flex;
+}
+
+.product-description .title {
+  width: 35%;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #777;
+  border-right: 0;
+}
+.product-description .text {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #777;
+  border-bottom: 0;
+}
+
+.images-2d {
+  display: flex;
+}
+.images-2d img {
+  max-height: 200px;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-lab {
+  height: 100px;
+}
+
+.contact {
+  margin-bottom: 10px;
+}
+
+.logo-lab img {
+  height: 100%;
+}
+
+.designer-photo {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.text.designer {
+  display: flex;
+}
